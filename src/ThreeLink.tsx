@@ -1,8 +1,13 @@
-import { MainRoute } from './routes/MainRoute'
+import { MainRoute } from 'routes'
+import { ThemeProvider } from 'context/ThemeContext'
+
+import 'styles/global.sass'
 
 const ThreeLink = () => {
   return (
-    <MainRoute />
+    <ThemeProvider>
+      <MainRoute />
+    </ThemeProvider>
   )
 }
 

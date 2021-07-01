@@ -6,6 +6,7 @@ import {
 
 import { HomeView } from 'views/Home'
 import { PreviewView } from 'views/Preview'
+
 import { routeNames } from 'constants/index'
 
 export const MainRoute = () => {
