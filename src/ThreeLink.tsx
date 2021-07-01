@@ -1,8 +1,8 @@
+import { MainRoute } from './routes/MainRoute'
+
 const ThreeLink = () => {
   return (
-    <div>
-      Three Link
-    </div>
+    <MainRoute />
   )
 }
 
