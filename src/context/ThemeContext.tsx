@@ -1,5 +1,7 @@
 import { createContext, ReactNode, useState } from "react"
 
+import { Wrapper } from 'components/layout'
+
 type ThemeType = 'dark' | 'light'
 
 interface ThemeContextProps {
@@ -24,7 +26,9 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
       }}
     >
       <div className={`theme-${theme}`}>
-        {children}
+        <Wrapper>
+          {children}
+        </Wrapper>
       </div>
     </ThemeContext.Provider>
   )

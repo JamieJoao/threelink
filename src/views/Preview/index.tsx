@@ -1,4 +1,4 @@
-import styles from './Preview.module.scss'
+// import styles from './Preview.module.scss'
 
 export const PreviewView = () => {
   return (

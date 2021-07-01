@@ -1,0 +1,60 @@
+@import styles/_mixins
+  
+.navbar
+  display: flex
+  align-items: center
+  height: 64px
+  box-shadow: 0 0 40px rgba(0, 0, 0, .04)
+  @include use-theme(background-color, card-background)
+  @include use-theme(color, native)
+
+  &_container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &_left,
+  &_right
+    display: flex
+    align-items: center
+
+  &_left
+    span
+      &:first-child
+        font-weight: 400
+        font-size: 18px
+        text-transform: capitalize
+        cursor: default
+
+      &:nth-child(2)
+        margin-left: 8px
+        @include use-theme(color, secondary)
+        @include use-media(max, 576px)
+          display: none
+
+  &_right
+    ul
+      list-style: none
+      padding-left: 0
+      display: flex
+      column-gap: 24px
+
+      li
+        display: flex
+        align-items: center
+        cursor: pointer
+        opacity: .85
+
+        &.toggle_button
+          display: flex
+          text-transform: capitalize
+
+          span
+            margin-right: 8px
+
+        &:hover
+          opacity: 1
+        
+        a
+          text-decoration: none
+          @include use-theme(color, primary)

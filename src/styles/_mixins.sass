@@ -1,0 +1,9 @@
+@mixin use-theme($property, $color, $transition: true)
+  #{$property}: var(--#{$color})
+
+  @if $transition == true
+    transition: $property .3s linear
+
+@mixin use-media($range, $size)
+  @media (#{$range}-width: $size)
+    @content
