@@ -1,0 +1,21 @@
+@import styles/_mixins
+
+.input
+  &_spacing
+    margin-bottom: 16px
+
+  input
+    width: 100%
+    border-radius: 8px
+    border: none
+    outline: none
+    padding: 8px 24px
+    font-size: 14px
+    border: 2px solid transparent
+
+    @include use-font()
+    @include use-theme(background-color, input-background)
+    @include use-theme(color, native)
+
+    &:focus
+      @include use-theme(border-color, secondary)

@@ -1,9 +1,15 @@
+@mixin use-transition($property: all, $duration: .3s)
+  transition: $property $duration linear
+
 @mixin use-theme($property, $color, $transition: true)
   #{$property}: var(--#{$color})
 
   @if $transition == true
-    transition: $property .3s linear
+    @include use-transition($property)
 
 @mixin use-media($range, $size)
   @media (#{$range}-width: $size)
     @content
+
+@mixin use-font($font: Roboto Condensed)
+  font-family: $font

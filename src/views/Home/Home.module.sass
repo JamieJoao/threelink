@@ -1,0 +1,47 @@
+@import styles/_mixins
+  
+.home
+  &_container
+    display: grid
+    max-width: 100%
+    grid-template-columns: 2fr 1fr
+    margin-top: 24px
+
+    @include use-media(max, 992px)
+      grid-template-columns: 1fr
+
+  &_panel
+    .panel_container
+      margin-left: auto
+      margin-right: auto
+      max-width: 600px
+
+      .panel_links
+        margin-top: 32px
+        
+        .link_input
+          display: flex
+          column-gap: 16px
+          align-items: center
+          padding: 16px
+          margin-bottom: 16px
+          border-radius: 14px
+          box-shadow: 0 0 40px rgba(0, 0, 0, .04)
+
+          @include use-theme(background-color, card-background)
+
+          &_left
+            width: 100%
+
+  &_phone
+    .phone_content
+      // position: relative
+      // height: 100%
+      // width: 100%
+      // border-radius: 32px
+      // background: red
+
+      // display: flex
+      // flex-direction: column
+      // align-items: center
+      // padding-top: 56px

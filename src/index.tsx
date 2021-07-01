@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom'
-import ThreeLink from './ThreeLink'
+import TreeLink from './TreeLink'
 
 ReactDOM.render(
-  <ThreeLink />,
+  <TreeLink />,
   document.getElementById('root')
 )

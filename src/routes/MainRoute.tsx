@@ -12,14 +12,14 @@ import { routeNames } from 'constants/index'
 export const MainRoute = () => {
   return (
     <Router>
-      <div>
-        <Switch>
+      {/* <div> */}
+      <Switch>
 
-          <Route path={routeNames.preview} component={PreviewView} />
-          <Route path={routeNames.home} exact component={HomeView} />
-          
-        </Switch>
-      </div>
+        <Route path={routeNames.preview} component={PreviewView} />
+        <Route path={routeNames.home} exact component={HomeView} />
+
+      </Switch>
+      {/* </div> */}
     </Router>
   )
 }

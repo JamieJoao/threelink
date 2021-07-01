@@ -3,7 +3,7 @@ import { ThemeProvider } from 'context/ThemeContext'
 
 import 'styles/global.sass'
 
-const ThreeLink = () => {
+const TreeLink = () => {
   return (
     <ThemeProvider>
       <MainRoute />
@@ -11,4 +11,4 @@ const ThreeLink = () => {
   )
 }
 
-export default ThreeLink
+export default TreeLink

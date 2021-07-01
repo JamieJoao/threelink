@@ -1,5 +1,17 @@
-import { ThemeIcon } from './ThemeIcon/index'
+import { ThemeIcon } from './ThemeIcon'
+import { Button } from './Button'
+import { Input } from './Input'
+import { Phone } from './Phone'
+import { Avatar } from './Avatar'
+import { Tree } from './Tree'
+import { Social } from './Social'
 
 export {
   ThemeIcon,
+  Button,
+  Input,
+  Phone,
+  Avatar,
+  Tree,
+  Social,
 }
