@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState } from "react"
+import { createContext, ReactNode, useState, useEffect } from "react"
 
 import { Wrapper } from 'components/layout'
 
@@ -14,8 +14,16 @@ export const ThemeContext = createContext({} as ThemeContextProps)
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<ThemeType>('light')
 
+  useEffect(() => {
+    updateBodyClass(theme)
+  }, [theme])
+
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')
+  }
+
+  const updateBodyClass = (theme: ThemeType) => {
+    document.body.className = `theme-${theme}`
   }
 
   return (
@@ -25,11 +33,9 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
         toggleTheme,
       }}
     >
-      <div className={`theme-${theme}`}>
-        <Wrapper>
-          {children}
-        </Wrapper>
-      </div>
+      <Wrapper>
+        {children}
+      </Wrapper>
     </ThemeContext.Provider>
   )
 }

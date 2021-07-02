@@ -8,8 +8,8 @@ interface Props {
 
 export const Wrapper = ({ children }: Props) => {
   return (
-    <div className={styles.wrapper}>
+    <main className={styles.wrapper}>
       {children}
-    </div>
+    </main>
   )
 }

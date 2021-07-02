@@ -5,6 +5,7 @@ import { Phone } from './Phone'
 import { Avatar } from './Avatar'
 import { Tree } from './Tree'
 import { Social } from './Social'
+import { Select } from './Select'
 
 export {
   ThemeIcon,
@@ -14,4 +15,5 @@ export {
   Avatar,
   Tree,
   Social,
+  Select,
 }

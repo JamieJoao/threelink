@@ -1,9 +1,19 @@
+// import Select from 'react-select'
+
 import { Navbar, Container } from "components/layout"
-import { Button, Input, Phone, Tree } from 'components/common'
+import { Button, Input, Phone, Select, Tree } from 'components/common'
 
 import styles from './Home.module.sass'
 
 export const HomeView = () => {
+  const options = [
+    { value: 'linkedin', label: 'Linkedin' },
+    { value: 'facebook', label: 'Facebook' },
+    { value: 'instagram', label: 'Instagram' },
+    { value: 'youtube', label: 'Youtube' },
+    { value: 'tiktok', label: 'Tiktok' },
+  ]
+
   return (
     <>
       <Navbar />
@@ -18,16 +28,17 @@ export const HomeView = () => {
               <ul>
                 <li className={styles.link_input}>
                   <div className={styles.link_input_left}>
-                    <Input placeholder='Título' spacing />
-                    <Input placeholder='Url' />
+                    {/* <Select options={options} placeholder='Seleccione una Red' /> */}
+                    <Select options={options} label='Seleccione una Red Social' />
+                    <Input spacing placeholder='Url' />
                   </div>
 
                   <Button icon={['fas', 'trash']} />
                 </li>
                 <li className={styles.link_input}>
                   <div className={styles.link_input_left}>
-                    <Input placeholder='Título' spacing />
-                    <Input placeholder='Url' />
+                    {/* <Select options={options} /> */}
+                    <Input spacing placeholder='Url' />
                   </div>
 
                   <Button icon={['fas', 'trash']} />

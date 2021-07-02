@@ -1,0 +1,45 @@
+@import styles/_mixins
+  
+.select
+  height: 48px
+  border-radius: 8px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 24px
+  font-size: 14px
+  z-index: 1
+  
+  @include use-theme(background-color, input-background)
+
+  &_label,
+  &_arrow
+    @include use-theme(color, input-text)
+
+  &_menu
+    position: absolute
+    top: 0
+    padding: 16px 0
+    border-radius: 16px
+    box-shadow: 0 0 30px var(--shadow-color)
+    overflow: hidden
+    display: none
+
+    @include use-theme(background-color, input-background)
+
+    &_active
+      display: block
+
+  &_list
+  
+  &_item
+    padding: 8px 16px
+    cursor: pointer
+
+    @include use-theme(color, native)
+
+    span
+      font-size: 14px
+
+    &:hover
+      @include use-theme(background-color, shadow-color, false)

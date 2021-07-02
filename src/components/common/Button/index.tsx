@@ -1,11 +1,8 @@
-import cn from 'classnames'
-import { IconProp, library } from '@fortawesome/fontawesome-svg-core'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import cn from 'classnames'
 
 import styles from './Button.module.sass'
-
-library.add(faTrash)
 
 interface Props {
   title?: string

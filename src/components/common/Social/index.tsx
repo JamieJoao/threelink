@@ -1,12 +1,6 @@
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 import styles from './Social.module.sass'
-
-library.add(faLinkedin)
-library.add(faFacebook)
-library.add(faInstagram)
 
 export const Social = () => {
   return (
