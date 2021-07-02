@@ -1,46 +1,103 @@
-# Getting Started with Create React App
+# TreeLink - Clon de LinkTree
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+Este proyecto es un clon de LinkTree con las siguientes carácterísticas.
 
-In the project directory, you can run:
+* ReactJS y Typescript
+* Metodología MET
+* SASS
 
-### `npm start`
+## Lanzar proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Ejecutar los siguientes comandos en orden
+```
+npm i
+npm start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Librerías usadas
 
-### `npm test`
+* react-router-dom
+* classnames
+* @fortawesome
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estructura
 
-### `npm run build`
+# src
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [assets/](.\src\assets)
+  * [icons/](.\src\assets\icons)
+    * [dark-mode.png](.\src\assets\icons\dark-mode.png)
+    * [light-mode.png](.\src\assets\icons\light-mode.png)
+  * [images/](.\src\assets\images)
+* [components/](.\src\components)
+  * [common/](.\src\components\common)
+    * [Avatar/](.\src\components\common\Avatar)
+      * [Avatar.module.sass](.\src\components\common\Avatar\Avatar.module.sass)
+      * [index.tsx](.\src\components\common\Avatar\index.tsx)
+    * [Button/](.\src\components\common\Button)
+      * [Button.module.sass](.\src\components\common\Button\Button.module.sass)
+      * [index.tsx](.\src\components\common\Button\index.tsx)
+    * [Input/](.\src\components\common\Input)
+      * [index.tsx](.\src\components\common\Input\index.tsx)
+      * [Input.module.sass](.\src\components\common\Input\Input.module.sass)
+    * [Phone/](.\src\components\common\Phone)
+      * [index.tsx](.\src\components\common\Phone\index.tsx)
+      * [Phone.module.sass](.\src\components\common\Phone\Phone.module.sass)
+    * [Select/](.\src\components\common\Select)
+      * [index.tsx](.\src\components\common\Select\index.tsx)
+      * [Select.module.sass](.\src\components\common\Select\Select.module.sass)
+    * [Social/](.\src\components\common\Social)
+      * [index.tsx](.\src\components\common\Social\index.tsx)
+      * [Social.module.sass](.\src\components\common\Social\Social.module.sass)
+    * [ThemeIcon/](.\src\components\common\ThemeIcon)
+      * [index.tsx](.\src\components\common\ThemeIcon\index.tsx)
+      * [ThemeIcon.module.sass](.\src\components\common\ThemeIcon\ThemeIcon.module.sass)
+    * [Tree/](.\src\components\common\Tree)
+      * [index.tsx](.\src\components\common\Tree\index.tsx)
+      * [Tree.module.sass](.\src\components\common\Tree\Tree.module.sass)
+    * [index.ts](.\src\components\common\index.ts)
+  * [layout/](.\src\components\layout)
+    * [Container/](.\src\components\layout\Container)
+      * [Container.module.sass](.\src\components\layout\Container\Container.module.sass)
+      * [index.tsx](.\src\components\layout\Container\index.tsx)
+    * [Navbar/](.\src\components\layout\Navbar)
+      * [index.tsx](.\src\components\layout\Navbar\index.tsx)
+      * [Navbar.module.sass](.\src\components\layout\Navbar\Navbar.module.sass)
+    * [Wrapper/](.\src\components\layout\Wrapper)
+      * [index.tsx](.\src\components\layout\Wrapper\index.tsx)
+      * [Wrapper.module.sass](.\src\components\layout\Wrapper\Wrapper.module.sass)
+    * [index.ts](.\src\components\layout\index.ts)
+* [constants/](.\src\constants)
+  * [index.ts](.\src\constants\index.ts)
+  * [routeNames.ts](.\src\constants\routeNames.ts)
+* [context/](.\src\context)
+  * [ThemeContext.tsx](.\src\context\ThemeContext.tsx)
+  * [UserContext.tsx](.\src\context\UserContext.tsx)
+* [data/](.\src\data)
+  * [user.json](.\src\data\user.json)
+* [hooks/](.\src\hooks)
+  * [index.ts](.\src\hooks\index.ts)
+  * [useProfile.ts](.\src\hooks\useProfile.ts)
+  * [useTheme.ts](.\src\hooks\useTheme.ts)
+* [routes/](.\src\routes)
+  * [index.ts](.\src\routes\index.ts)
+  * [MainRoute.tsx](.\src\routes\MainRoute.tsx)
+* [styles/](.\src\styles)
+  * [global.sass](.\src\styles\global.sass)
+  * [_mixins.sass](.\src\styles\_mixins.sass)
+* [types/](.\src\types)
+  * [responses.ts](.\src\types\responses.ts)
+  * [types.ts](.\src\types\types.ts)
+* [views/](.\src\views)
+  * [Home/](.\src\views\Home)
+    * [Home.module.sass](.\src\views\Home\Home.module.sass)
+    * [index.tsx](.\src\views\Home\index.tsx)
+  * [Preview/](.\src\views\Preview)
+    * [index.tsx](.\src\views\Preview\index.tsx)
+    * [Preview.module.sass](.\src\views\Preview\Preview.module.sass)
+* [index.tsx](.\src\index.tsx)
+* [react-app-env.d.ts](.\src\react-app-env.d.ts)
+* [setupTests.ts](.\src\setupTests.ts)
+* [TreeLink.tsx](.\src\TreeLink.tsx)
