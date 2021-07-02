@@ -11,6 +11,12 @@
       "url": "https://www.linkedin.com/in/jojham"
     },
     {
+      "id": 4,
+      "icon": "github",
+      "name": "Github",
+      "url": "https://github.com/JamieJoao"
+    },
+    {
       "id": 2,
       "icon": "facebook",
       "name": "Facebook",

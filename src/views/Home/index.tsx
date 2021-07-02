@@ -12,6 +12,7 @@ export const HomeView = () => {
   const options = [
     { value: '', label: 'Ninguno' },
     { value: 'linkedin', label: 'Linkedin' },
+    { value: 'github', label: 'Github' },
     { value: 'facebook', label: 'Facebook' },
     { value: 'instagram', label: 'Instagram' },
     { value: 'youtube', label: 'Youtube' },
