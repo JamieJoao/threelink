@@ -3,8 +3,9 @@
 .home
   &_container
     display: grid
-    max-width: 100%
+    column-gap: 16px
     grid-template-columns: 2fr 1fr
+    max-width: 100%
     margin-top: 24px
 
     @include use-media(max, 992px)
@@ -41,7 +42,3 @@
             @include use-media(max, 576px)
               grid-template-columns: 1fr
               row-gap: 16px
-
-  &_phone
-    .phone_content
-      
