@@ -34,6 +34,14 @@ export const Select = ({ options, label, onChange }: Props) => {
     }
   )
 
+  useLayoutEffect(() => {
+    setOffsets({
+      top: selectRef.current?.offsetTop! + OFFSET,
+      left: selectRef.current?.offsetLeft! + OFFSET,
+      width: selectRef.current?.clientWidth! - OFFSET * 2,
+    })
+  }, [])
+
   const selectMenu = (
     <div
       className={classNamesMenu}
@@ -60,14 +68,6 @@ export const Select = ({ options, label, onChange }: Props) => {
       </ul>
     </div>
   )
-
-  useLayoutEffect(() => {
-    setOffsets({
-      top: selectRef.current?.offsetTop! + OFFSET,
-      left: selectRef.current?.offsetLeft! + OFFSET,
-      width: selectRef.current?.clientWidth! - OFFSET * 2,
-    })
-  }, [])
 
   const handleClick = () => {
     setStatus({ ...status, active: !status.active })

@@ -1,5 +1,3 @@
-// import Select from 'react-select'
-
 import { Navbar, Container } from "components/layout"
 import { Button, Input, Phone, Select, Tree } from 'components/common'
 
@@ -28,17 +26,16 @@ export const HomeView = () => {
               <ul>
                 <li className={styles.link_input}>
                   <div className={styles.link_input_left}>
-                    {/* <Select options={options} placeholder='Seleccione una Red' /> */}
                     <Select options={options} label='Seleccione una Red Social' />
-                    <Input spacing placeholder='Url' />
+                    <Input placeholder='Url' />
                   </div>
 
                   <Button icon={['fas', 'trash']} />
                 </li>
                 <li className={styles.link_input}>
                   <div className={styles.link_input_left}>
-                    {/* <Select options={options} /> */}
-                    <Input spacing placeholder='Url' />
+                    <Select options={options} label='Seleccione una Red Social' />
+                    <Input placeholder='Url' />
                   </div>
 
                   <Button icon={['fas', 'trash']} />
