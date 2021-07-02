@@ -5,12 +5,12 @@
 Este proyecto es un clon de LinkTree con las siguientes carácterísticas.
 
 * ReactJS y Typescript
-* Metodología MET
+* Metodología BEM
 * SASS
 
 ## Lanzar proyecto
 
-Ejecutar los siguientes comandos en orden
+Ejecutar los siguientes comandos en orden luego de clonarlo
 ```
 npm i
 npm start
