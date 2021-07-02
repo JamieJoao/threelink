@@ -7,15 +7,17 @@ import styles from './Button.module.sass'
 interface Props {
   title?: string
   icon?: IconProp
+  disabled?: boolean
   onClick?: () => void
 }
 
-export const Button = ({ title, icon, onClick }: Props) => {
+export const Button = ({ title, icon, disabled, onClick }: Props) => {
   const isIcon = !!icon
   const classNames = cn(
     styles.button,
     {
-      [styles.button_icon]: isIcon
+      [styles.button_icon]: isIcon,
+      [styles.button_disabled]: disabled,
     }
   )
 
@@ -23,6 +25,7 @@ export const Button = ({ title, icon, onClick }: Props) => {
     <button
       className={classNames}
       onClick={onClick}
+      disabled={disabled}
     >
       {
         isIcon

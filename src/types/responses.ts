@@ -1,8 +1,8 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core"
+import { IconName } from "@fortawesome/fontawesome-svg-core"
 
 export interface ProfileLink {
   id: number
-  icon: IconProp
+  icon: IconName
   name: string
   url: string
 }

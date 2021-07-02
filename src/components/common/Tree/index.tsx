@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import cn from 'classnames'
 
 import { Avatar, Social } from 'components/common'
@@ -31,11 +32,14 @@ export const Tree = ({ rounded, full }: Props) => {
         <ul className={styles.tree_list}>
           {
             links
-              .map(({ id, name, url }) => (
+              .map(({ id, name, url, icon }) => (
                 <li
                   className={styles.tree_item}
                   key={id}
                 >
+                  <span className={styles.tree_item_icon}>
+                    <FontAwesomeIcon icon={['fab', icon]} />
+                  </span>
                   <a href={url} target='_blank' rel='noopener noreferrer'>
                     <span>{name}</span>
                   </a>

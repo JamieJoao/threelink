@@ -1,9 +1,9 @@
 import { Navbar, Container } from "components/layout"
 import { Button, Input, Phone, Select, Tree } from 'components/common'
-import { ProfileLink } from 'types/responses'
 import { useProfile } from 'hooks'
-
+import { parameters } from 'constants/index'
 import { SelectOptionsType } from "types/types"
+import { ProfileLink } from 'types/responses'
 
 import styles from './Home.module.sass'
 
@@ -91,7 +91,10 @@ export const HomeView = () => {
         <div className={styles.home_panel}>
           <div className={styles.panel_container}>
 
-            <Button title='Agregar Nuevo Link' onClick={handleNewLink} />
+            <Button
+              title='Agregar Nuevo Link'
+              onClick={handleNewLink}
+              disabled={links.length >= parameters.limitLinks} />
 
             <div className={styles.panel_links}>
               <ul>

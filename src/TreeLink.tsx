@@ -4,19 +4,30 @@ import { UserProvider } from 'context/UserContext'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faFacebook, faInstagram, faYoutube, faTiktok, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faChevronDown, faChevronUp, faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faChevronUp, faTrash, faEllipsisH } from '@fortawesome/free-solid-svg-icons'
 
 import 'styles/global.sass'
 
-library.add(faChevronDown, faChevronUp, faTrash, faLinkedin, faFacebook, faInstagram, faYoutube, faTiktok, faGithub)
+library.add(
+  faChevronDown,
+  faChevronUp,
+  faTrash,
+  faLinkedin,
+  faFacebook,
+  faInstagram,
+  faYoutube,
+  faTiktok,
+  faGithub,
+  faEllipsisH,
+)
 
 const TreeLink = () => {
   return (
     <ThemeProvider>
       <UserProvider>
-        
+
         <MainRoute />
-        
+
       </UserProvider>
     </ThemeProvider>
   )
