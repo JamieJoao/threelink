@@ -33,18 +33,13 @@
           &_left
             width: 100%
             display: grid
-            grid-template-columns: repeat(2, 1fr)
+            grid-template-columns: .5fr 1fr
             column-gap: 16px
+
+            @include use-media(max, 576px)
+              grid-template-columns: 1fr
+              row-gap: 16px
 
   &_phone
     .phone_content
-      // position: relative
-      // height: 100%
-      // width: 100%
-      // border-radius: 32px
-      // background: red
-
-      // display: flex
-      // flex-direction: column
-      // align-items: center
-      // padding-top: 56px
+      

@@ -1,5 +1,5 @@
 @import styles/_mixins
-  
+
 .select
   height: 48px
   border-radius: 8px
@@ -9,8 +9,16 @@
   padding: 0 24px
   font-size: 14px
   z-index: 1
-  
+  border: 2px solid transparent
+
   @include use-theme(background-color, input-background)
+
+  &_available
+    .select_label
+      @include use-theme(color, secondary)
+
+  &_active
+    @include use-theme(border-color, primary)
 
   &_label,
   &_arrow
@@ -32,7 +40,7 @@
       display: block
 
   &_list
-  
+
   &_item
     padding: 8px 16px
     cursor: pointer
@@ -42,5 +50,6 @@
     span
       font-size: 14px
 
-    &:hover
+    &:hover,
+    &_selected
       @include use-theme(background-color, shadow-color, false)

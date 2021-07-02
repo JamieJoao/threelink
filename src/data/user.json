@@ -1,19 +1,26 @@
 {
   "photoUrl": "https://scontent.fpiu2-1.fna.fbcdn.net/v/t1.6435-9/134080445_3598943473522140_7317625741473646394_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=ySZsAdlKiJgAX8N21Dm&_nc_ht=scontent.fpiu2-1.fna&oh=67918955616eb0b47fc464a25e188442&oe=60E2ED4A",
   "fullname": "Jamie Joao Mendoza Sernaqué",
+  "alias": "@JamieMendoza",
   "job": "Frontend Developer",
   "links": [
     {
       "id": 1,
-      "icon": "",
+      "icon": "linkedin",
       "name": "Linkedin",
-      "link": "https://www.linkedin.com/in/jojham"
+      "url": "https://www.linkedin.com/in/jojham"
     },
     {
       "id": 2,
-      "icon": "",
+      "icon": "facebook",
       "name": "Facebook",
-      "link": "https://www.facebook.com/Jamiejoao"
+      "url": "https://www.facebook.com/Jamiejoao"
+    },
+    {
+      "id": 3,
+      "icon": "instagram",
+      "name": "Instagram",
+      "url": "https://www.instagram.com/jamiejoaomendoza"
     }
   ]
 }

@@ -5,7 +5,7 @@ import { Tree } from "components/common"
 export const PreviewView = () => {
   return (
     <div className={styles.preview}>
-      <Tree />
+      <Tree full />
     </div>
   )
 }

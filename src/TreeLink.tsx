@@ -1,18 +1,23 @@
 import { MainRoute } from 'routes'
 import { ThemeProvider } from 'context/ThemeContext'
+import { UserProvider } from 'context/UserContext'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faFacebook, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons'
 import { faChevronDown, faChevronUp, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 import 'styles/global.sass'
 
-library.add(faChevronDown, faChevronUp, faTrash, faLinkedin, faFacebook, faInstagram)
+library.add(faChevronDown, faChevronUp, faTrash, faLinkedin, faFacebook, faInstagram, faYoutube, faTiktok)
 
 const TreeLink = () => {
   return (
     <ThemeProvider>
-      <MainRoute />
+      <UserProvider>
+        
+        <MainRoute />
+        
+      </UserProvider>
     </ThemeProvider>
   )
 }
